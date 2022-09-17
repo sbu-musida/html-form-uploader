@@ -1,0 +1,22 @@
+<head>
+<style>
+.center {
+  margin: auto;
+  width: 25%;
+  border: 1px solid #000000;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+<div class="center">
+<form action="multiple_file_upload.php" method="POST" enctype="multipart/form-data">
+<table>
+	<tr><td>File 1</td> <td><input name="userfile[]" type="file" class="multi" multiple /> </td></tr>
+	<!-- <tr><td>File 2</td> <td><input name="userfile[]" type="file" class="multi"/> </td></tr> -->
+	<!-- <tr><td>File 3</td> <td><input name="userfile[]" type="file" class="multi"/> </td></tr> -->
+	<tr><td></td> <td> <input type="submit" name="upload" value="Upload"><input type="reset"> </td> </tr>
+</table>
+</form>
+</div>
+</body>
